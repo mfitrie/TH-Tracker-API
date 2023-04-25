@@ -9,4 +9,24 @@ export class AppController {
   getIndex(): object {
     return this.appService.getIndex();
   }
+
+  @Get('find-all')
+  findAll(): object{
+    return this.appService.findAll();
+  }
+
+  @Get('find-one')
+  findOne(): object{
+    return this.appService.findOne();
+  }
+
+  @Get('update-one')
+  updateOne(): object{
+    return this.appService.updateOne();
+  }
+
+  @Get('delete-one')
+  deleteOne(): object{
+    return this.appService.deleteOne();
+  }
 }
